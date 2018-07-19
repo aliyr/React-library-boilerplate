@@ -62,7 +62,7 @@ npm run transpile
 
 Every time you make changes to your project , you have to run `npm run transpile` 
 
-##Step Four
+## Step Four
 
 start your `playground` project by :
 
