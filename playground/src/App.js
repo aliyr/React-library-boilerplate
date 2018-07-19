@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Button} from 'react-com';
+import {Button, ButtonPrimary ,Header} from 'react-com';
 
 class App extends Component {
   render() {
@@ -14,7 +14,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button text="gholi"/>
+        <Button>this is a button</Button>
+        <Header text="this is a header"/>
       </div>
     );
   }

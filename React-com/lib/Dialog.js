@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Dialog = exports.ButtonPrimary = exports.Button = undefined;
+exports.DialogPrimary = exports.Dialog = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -19,58 +19,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Button = function (_Component) {
-    _inherits(Button, _Component);
-
-    function Button(props) {
-        _classCallCheck(this, Button);
-
-        return _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
-    }
-
-    _createClass(Button, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'button',
-                null,
-                'hello ',
-                this.props.text,
-                '!'
-            );
-        }
-    }]);
-
-    return Button;
-}(_react.Component);
-
-var ButtonPrimary = function (_Component2) {
-    _inherits(ButtonPrimary, _Component2);
-
-    function ButtonPrimary(props) {
-        _classCallCheck(this, ButtonPrimary);
-
-        return _possibleConstructorReturn(this, (ButtonPrimary.__proto__ || Object.getPrototypeOf(ButtonPrimary)).call(this, props));
-    }
-
-    _createClass(ButtonPrimary, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'button',
-                null,
-                'hello ',
-                this.props.text,
-                '!'
-            );
-        }
-    }]);
-
-    return ButtonPrimary;
-}(_react.Component);
-
-var Dialog = function (_Component3) {
-    _inherits(Dialog, _Component3);
+var Dialog = function (_Component) {
+    _inherits(Dialog, _Component);
 
     function Dialog(props) {
         _classCallCheck(this, Dialog);
@@ -94,6 +44,30 @@ var Dialog = function (_Component3) {
     return Dialog;
 }(_react.Component);
 
-exports.Button = Button;
-exports.ButtonPrimary = ButtonPrimary;
+var DialogPrimary = function (_Component2) {
+    _inherits(DialogPrimary, _Component2);
+
+    function DialogPrimary(props) {
+        _classCallCheck(this, DialogPrimary);
+
+        return _possibleConstructorReturn(this, (DialogPrimary.__proto__ || Object.getPrototypeOf(DialogPrimary)).call(this, props));
+    }
+
+    _createClass(DialogPrimary, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'h1',
+                null,
+                'hello ',
+                this.props.text,
+                '!'
+            );
+        }
+    }]);
+
+    return DialogPrimary;
+}(_react.Component);
+
 exports.Dialog = Dialog;
+exports.DialogPrimary = DialogPrimary;

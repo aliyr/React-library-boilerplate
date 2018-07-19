@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 
-class Button extends Component{
+class Dialog extends Component{
 
     constructor(props) {
         super(props);
@@ -8,12 +8,12 @@ class Button extends Component{
 
     render() {
         return(
-            <button>hello {this.props.text}!</button>
+            <h1>hello {this.props.text}!</h1>
         )
     }
 }
 
-class ButtonPrimary extends Component{
+class DialogPrimary extends Component{
 
     constructor(props) {
         super(props);
@@ -21,9 +21,9 @@ class ButtonPrimary extends Component{
 
     render() {
         return(
-            <button style="background-color:'red'">hello {this.props.text}!</button>
+            <h1>hello {this.props.text}!</h1>
         )
     }
 }
 
-export {Button , ButtonPrimary};
+export {Dialog , DialogPrimary};
