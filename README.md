@@ -18,7 +18,7 @@ npm install
 
 ## Step Two
 
-In React-com (library directory) , you can add a component in `/src` folder and after you completed your Component , you have to export it among other components.
+In React-com (library directory) , you can add a component in `/src` with `.pl.js` folder and after you completed your Component , you have to export it among other components.
 
 ```
 
