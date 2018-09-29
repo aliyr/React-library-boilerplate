@@ -51,7 +51,7 @@ gulp
 
 ### Hint 
 
-before you started working with gulp, make sure you have installed `gulp-cli` globally on your machine
+before you start working with gulp, make sure you have installed `gulp-cli` globally on your machine
 
 
 ## Step Four
