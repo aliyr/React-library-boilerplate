@@ -11,5 +11,5 @@ gulp.task('default', () =>
             ]
         }))
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('Auto'))
+        .pipe(gulp.dest('lib'))
 );
