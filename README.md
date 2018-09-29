@@ -18,13 +18,13 @@ npm install
 
 ## Step Two
 
-In React-com (library directory) , you can add a component in `src/Main.js` file and after you completed your Component , you have to export it among other components.
+In React-com (library directory) , you can add a component in `/src` folder and after you completed your Component , you have to export it among other components.
 
 ```
 
 import React , {Component} from 'react';
 
-class ButtonPrimary extends Component{
+export class ButtonPrimary extends Component{
 
     constructor(props) {
         super(props);
@@ -37,30 +37,22 @@ class ButtonPrimary extends Component{
     }
 }
 
-export {... , ButtonPrimary };
 
 ```
 
 
 ## Step Three
 
-In React-com , There is two commnad , `npm run build` and `npm run transpile`.
-
-After you completed your component , run :
+use gulp to concat and transpile your code to ES5 :
 
 ```
-npm run build
+gulp
 ```
 
-in order to Build your project . and then run : 
+### Hint 
 
-```
-npm run transpile
-```
+before you started working with gulp, make sure you have installed `gulp-cli` globally on your machine
 
-### Hint
-
-Every time you make changes to your project , you have to run `npm run transpile` 
 
 ## Step Four
 
@@ -88,7 +80,5 @@ class App extends Component {
 
 export default App;
 ```
-
-
 
 
